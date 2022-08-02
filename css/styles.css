@@ -15,7 +15,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+.address{
+  font-style: normal;
+}
 /* оформляємо header */
 /* logo */
 
@@ -27,7 +29,6 @@ a {
   top: 24px; */
 
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -41,7 +42,14 @@ a {
 .logo-black {
   color: #000000;
   font-family: 'Raleway';
-  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-white {
+  color: #fff;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -49,7 +57,19 @@ a {
 }
 
 .menu {
-  color: var(--primary-text-color);
+  font-family: 'Roboto';
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: #212121;
+
+}
+
+.active{
+  color: var(--blue-color);
 }
 
 .menu:hover,
@@ -59,8 +79,7 @@ a {
 
 .cell {
   color: var(--secondary-text-color);
-  /* font-family: 'Roboto'; */
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,10 +92,10 @@ a {
 }
 
 .cell-2 {
-  color: var(--secondary-text-color);
-  /* font-family: 'Roboto'; */
-  font-style: normal;
-  font-weight: 400;
+  /* color: var(--secondary-text-color); */
+  color:rgba(255, 255, 255, 0.6);
+
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
@@ -91,8 +110,6 @@ a {
 
 .web-link {
   color: var(--secondary-text-color);
-  /* font-family: 'Roboto'; */
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -105,10 +122,9 @@ a {
 }
 
 .web-link-2 {
-  color: var(--secondary-text-color);
-  /* font-family: 'Roboto'; */
-  font-style: normal;
-  font-weight: 400;
+  /* color: var(--secondary-text-color); */
+  color:rgba(255, 255, 255, 0.6);
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
@@ -121,9 +137,8 @@ a {
 }
 
 .place {
-  /* font-family: 'Roboto'; */
-  font-style: normal;
-  font-weight: 400;
+  
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
@@ -135,16 +150,15 @@ a {
 /*HERO*/
 
 .hero {
-  background-color: teal;
+  background-color:  #2F303A;;
 }
 
 h1 {
-  /* font-family: 'Roboto'; */
-  font-style: normal;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
+
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -153,12 +167,11 @@ h1 {
   color: #ffffff;
 }
 h2 {
-  /* font-family: 'Roboto'; */
-  font-style: normal;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
 
   color: #212121;
@@ -166,51 +179,24 @@ h2 {
 }
 
 h3 {
-  /* font-family: 'Roboto'; */
-  font-style: normal;
+
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+
 
   color: #212121;
 }
 
-/* h5{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
 
-/*text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
-}
-
-h6{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px;
-/* identical to box height, or 200% */
-
-/*letter-spacing: 0.06em;
-
-color: #212121;
-
-} */
 
 p {
-  font-style: normal;
+  
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
-  /* or 171% */
+ 
 
   letter-spacing: 0.03em;
 
@@ -220,8 +206,8 @@ p {
 
 .about-us {
   /* font-family: 'Roboto'; */
-  font-style: normal;
-  font-weight: 400;
+  
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
@@ -231,10 +217,15 @@ p {
   color: #757575;
 }
 
+section.about-us ul > li > p{
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .button-list {
   color: var(--primary-text-color);
   /* font-family: 'Roboto'; */
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -269,7 +260,7 @@ p {
   background-color: var(--blue-color);
   color: var(--white-color);
   /* font-family: 'Roboto'; */
-  font-style: normal;
+ 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -292,7 +283,7 @@ p {
 /* work-list */
 .work-list > li > h2 {
   /* font-family: 'Roboto'; */
-  font-style: normal;
+ 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -300,5 +291,5 @@ p {
 
 /* footer */
 .footer {
-  background-color: teal;
+  background-color: #2F303A;;
 }
